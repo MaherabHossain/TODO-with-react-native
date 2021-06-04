@@ -5,15 +5,7 @@ import {StyleSheet,View,Text,ScrollView,FlatList} from 'react-native'
 import Header from './Header'
 import TodoItems from './TodoItems'
 const Todos = () =>{
-    const [todos,setTodos] = useState ([
-      {text:'Do some native code',key:1},
-      {text:'Solve some problem',key:2},
-      {text:'watching movie',key:3},
-      {text:'listening song',key:4},
-      {text:'playing football',key:5},
-      {text:'sleep',key:6},
-      {text:'eat bargur',key:7},
-  ]);
+    const [todos,setTodos] = useState ([]);
 
   const pressHandler = (key) => {
     setTodos(prevTodos => {
